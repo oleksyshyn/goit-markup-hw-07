@@ -308,6 +308,13 @@ ul {
     }
 }
 
+@media screen and (min-width: 1200px) {
+    .hero {
+        padding-top: 188px;
+        padding-bottom: 188px;
+    }
+}
+
 .overlay {
     max-width: 428px;
     height: 432px;
@@ -370,10 +377,16 @@ screen and (min-resolution: 2dppx) {
 
 @media screen and (min-width: 768px) {
     .hero-title {
-        margin: 0 auto 56px;
+        margin-bottom: 40px;
         width: 494px;
         font-size: 56px;
         line-height: 1.07;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .hero-title {
+        margin-bottom: 48px;
     }
 }
 .button {
@@ -390,6 +403,7 @@ screen and (min-resolution: 2dppx) {
 
 .hero .button {
     display: inline-block;
+    height: 56px;
     padding: 16px 32px;
     background-color: var(--accent-color);
     color: var(--white-color);
@@ -457,6 +471,9 @@ screen and (min-resolution: 2dppx) {
         border-radius: 4px;
         margin-bottom: 8px;
     }
+    .section.advantages {
+        padding-bottom: 0;
+    }
 }
 
 .advantages-icon {
@@ -472,6 +489,7 @@ screen and (min-resolution: 2dppx) {
     line-height: 1.11;
     text-align: center;
 }
+
 .advantages-list p {
     font-weight: 500;
 }
@@ -504,12 +522,43 @@ screen and (min-resolution: 2dppx) {
     }
 }
 
+@media screen and (min-width: 1200px) {
+    .advantages-list {
+        margin-top: 0;
+    }
+    .advantages-element {
+        flex-basis: calc(100% / 4 - 24px);
+        margin: 0;
+        margin-left: 24px;
+        margin-top: 0;
+    }
+    .advantages-list .title {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+    }
+    .advantages-list p {
+        font-weight: 400;
+    }
+}
+
 /* Work */
 
 @media screen and (max-width: 1199px) {
     .section.work {
         display: none;
     }
+}
+.work-list {
+    display: flex;
+}
+
+.work-element {
+    margin-right: 24px;
+}
+
+.work-element:nth-child(3n) {
+    margin-right: 0;
 }
 
 /* Team */
@@ -863,6 +912,27 @@ screen and (min-resolution: 2dppx) {
     }
 }
 
+@media screen and (min-width: 1200px) {
+    .footer {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .footer-description {
+        width: 264px;
+        margin-right: 120px;
+        margin-bottom: 0;
+    }
+
+    .social-media {
+        margin-right: 80px;
+        margin-bottom: 0;
+    }
+
+    .subscribe {
+        margin-right: 0;
+    }
+}
 /* Modal */
 
 .backdrop {
